@@ -1,0 +1,35 @@
+general data
+https://flow.polar.com/activity/passivity/1.6.2015/12.7.2015?_=1439289791099
+https://flow.polar.com/activity/summary/1.6.2015/30.6.2015/month?_=1439289791100
+https://flow.polar.com/activity/data/1.6.2015/12.7.2015?_=1439289791101
+https://flow.polar.com/training/getCalendarWeekSummary (post)
+	1. {"from":"01.06.2015","to":"12.07.2015"}
+
+data analyse
+http://docs.scipy.org/doc/scipy/reference/generated/scipy.interpolate.interp1d.html#scipy.interpolate.interp1d
+http://fellrnr.com/wiki/Training_Monotony
+http://fellrnr.com/wiki/TRIMP
+article "A New Aproach to Monitoring Exercise Training"
+http://www.runningforfitness.org/faq/rp
+http://www.runningforfitness.org/faq/vo2-max
+
+gps format https://en.wikipedia.org/wiki/Geohash
+in python http://geopy.readthedocs.org/en/latest/
+
+plan
+	* verschillende aggregators
+		* hash over code
+		* toepassen op verschillende datasets
+			* ook van andere aggregator
+			* verwerk versie doorvoering
+		* voorbeelden
+			* door bearing bepalen, linksom of rechtsom
+			* ronde herkeninning, auto laps (prefereer dicht bij start)
+			* clusteren, tot afstand clusters bepaalde waarde bereikt (5 meter)
+	* resultaat per aggregator and hash opgeslagen
+	* daemon die kijkt wat er nog moet worden uitgevoerd
+		* selectieregels
+		* prioriteitregels
+	* visulatisaties
+		* afhankelijk van output van aggregator (specifiek versie)
+		* mogelijk om oude data te verwisselen

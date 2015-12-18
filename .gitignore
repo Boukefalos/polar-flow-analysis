@@ -1,0 +1,8 @@
+/flow-session.dat
+/data
+/json
+/venv
+/.Rhistory
+/.RData
+/__pycache__
+/*.pyc
