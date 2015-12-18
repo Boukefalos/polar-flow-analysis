@@ -2,12 +2,15 @@
 #install.packages("plotKML")
 #install.packages("maptools")
 #install.packages("gpsbabel")
-cat("\014")
+
 library(XML)
 
+cat("\014")
+setwd(dirname(parent.frame(2)$ofile))
 
-file = "Rik_Veenboer_2015-11-10_17-21-59.gpx"
-file = "test.gpx"
+
+file = "data/Rik_Veenboer_2015-11-10_17-21-59.gpx"
+#file = "test.gpx"
 
 data = xmlParse(file)
 
@@ -28,3 +31,4 @@ colnames(xx) = c("lat", "lon")
 
 
 xxx=merge(result, xx)
+

@@ -114,8 +114,8 @@ class Flow:
                 for item in contents:
                     self.downloadTraining(item['listItemId'])
 
-    def processTraining(self):
-        proc = subprocess.Popen(['RScript','test.R', 'Rik_Veenboer_2015-04-25_10-14-43'], stdout = subprocess.PIPE, universal_newlines = True)
+    def processTraining(self, session):
+        proc = subprocess.Popen(['RScript','test.R', session], stdout = subprocess.PIPE, universal_newlines = True)
         while True:
           line = proc.stdout.readline()
           if line != '':

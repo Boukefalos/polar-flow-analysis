@@ -21,7 +21,7 @@ with Flow() as flow:
         # print(start <= test <= end)
         # flow.getEventsInRange(start, end)
         # flow.parseCalenderEvents()
-        flow.processTraining()
+        flow.processTraining('Rik_Veenboer_2015-11-10_17-21-59')
 
 sys.exit()
 
