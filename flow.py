@@ -20,6 +20,8 @@ class Flow:
         self.datadir = datadir
         if not os.path.exists(jsondir):
             os.makedirs(jsondir)
+        if not os.path.exists(datadir):
+            os.makedirs(datadir)
 
         self.period = 2 # weeks        
         self.file = file
